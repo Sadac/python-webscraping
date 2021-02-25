@@ -35,3 +35,23 @@ for li in list_items:
   # if we execute xpath agains a tree object we dont need the "."
   print(text)
   # print(etree.tostring(li))
+
+
+  # USING CSS SELECTORS
+tree = etree.parse('fundamentals/src/web_page.html')
+html = tree.getroot() # convert the tree object to html object to use cssselect
+title_element = html.cssselect("title")[0] # tag
+print(title_element.text)
+
+p_element = html.cssselect("p")[0]
+print(p_element.text)
+
+list_items = html.cssselect("li")
+
+for li in list_items:
+  a = li.cssselect("a")
+  if len(a) == 0:
+    print(li.text)
+  else:
+    print(f"{li.text.strip()} {a[0].text}")
+

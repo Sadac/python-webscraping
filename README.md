@@ -9,3 +9,6 @@
 5. inside the environment: `pipenv install pylint autopep8 --dev`
 		install 2 python dependencies as dev dependencies
 6. install lxml dependency: `pipenv install lxml`
+
+### CSS selectors
+To use css selector on web scraping, we need to install `pipenv cssselect`
