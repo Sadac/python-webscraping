@@ -12,3 +12,8 @@
 
 ### CSS selectors
 To use css selector on web scraping, we need to install `pipenv cssselect`
+To try out CSS selector visit https://try.jsoup.org/
+
+### XPath
+Visit https://scrapinghub.github.io/xpath-playground/ to try out XPath
+`//h1` will search any <h1> tag without considering if it's nested or not. Just select all the <h1>
